@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Advanced TicTacToe",
+        "subtitle": "(Socket-based Multiplayer Mobile Game)",
+        "description": "Developed a Real-time TicTacToe Application with built-in FriendList Management System like PUBG, integrated Real Time Challanges, QR Room's with proper Authentication, password reset system, implemented hashing mechanisms to provide security.",
+        "tags": [
+            "react.js",
+            "express.js",
+            "node.js",
+            "socket.io",
+            "mongoDB",
+            "javascript",
+            "ReactNative.js"
+        ],
+        "image": {
+            "url": "../assets/images/TicTacToe.png",
+            "device": "mobile"
+        },
+        "headingColor":"#e84300"
+    },
+    {
+        "title": "Shop-it",
+        "subtitle": "(e-commerce web and mobile platform)",
+        "description": "Developed an E-commerce web & mobile Application using MERN stack. integrated Real Time Challanges, QR Room's with proper Authentication, password reset system, implemented hashing mechanisms to provide security.",
+        "tags": [
+            "react.js",
+            "express",
+            "node.js",
+            "socket.io",
+            "mongoDB",
+            "javascript",
+            "react.js"
+        ],
+        "image": {
+            "url": "../assets/images/shopit.avif",
+            "device": "laptop"
+        },
+        "headingColor":"#773ede"
+    },
+    {
+        "title": "NEWS APP",
+        "subtitle": "(SSR-based NEWS Application)",
+        "description": "built-in FriendList Management System like PUBG, integrated Real Time Challanges, QR Room's functionality. Integrated proper Authentication, password reset, hashing mechanisms to provide security.",
+        "tags": [
+            "ejs",
+            "express",
+            "node.js",
+            "mongoDB",
+            "javascript"
+        ],
+        "image": {
+           "url": "../assets/images/newsApp.png",
+           "device": "laptop"
+        },
+        "headingColor":"#0066a6"
+    }
+]

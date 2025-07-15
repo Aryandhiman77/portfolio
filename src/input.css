@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.skill {
+  @apply border-2 p-3 rounded-2xl flex flex-row justify-between items-center gap-2 text-xl backdrop-blur-sm bg-white/30 ;
+}
+.vertical-line {
+  @apply w-[2px] h-[135vh] bg-[#1495b6ff] mx-auto;
+}
+.circle{
+    @apply   h-[20px] w-[20px] rounded-xl flex justify-center items-center z-10;
+}
+.white-circle{
+    @apply  p-[1px] bg-[#fff] h-[10px] w-[10px] rounded-xl z-10;
+}
+.laptop {
+    @apply w-[450px] h-auto;
+}
+.mobile {
+    @apply w-[270px] h-auto;
+}
+.project{
+    @apply w-[35%]
+}
+.tag{
+    @apply border-[1px] border-gray-300 py-1 px-2 rounded-2xl text-sm font-light;
+}
+.custom-font{
+    @apply font-[Handlee,cursive];
+}
+.hr{
+    @apply h-[2px] w-full bg-[#1788ae]
+}
+.darkmode{
+    @apply bg-black text-gray-300
+}
+.formbg{
+    @apply bg-[#e5f5fe]
+}
