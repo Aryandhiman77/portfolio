@@ -1,6 +1,6 @@
 (async () => {
   try {
-    const response = await fetch("./javascript/projects.json");
+    const response = await fetch("./src/javascript/projects.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
