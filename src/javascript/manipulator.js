@@ -5,7 +5,6 @@
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const jsonData = await response.json();
-    jsonData;
     manipulateProjects(jsonData);
   } catch (error) {
     console.error("Error loading JSON:", error);
