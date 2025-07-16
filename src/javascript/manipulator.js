@@ -155,7 +155,7 @@ const automaticallyDarkinEvening = () => {
     bodyClasses.add("darkmode");
     document.getElementById("invertImage").classList.add("invert");
     document.getElementById("modelDark").classList.add("bg-black");
-  document.getElementById("modelDark").classList.remove("formbg");
+    document.getElementById("modelDark").classList.remove("formbg");
     changeToggleIcon();
   }
 };
