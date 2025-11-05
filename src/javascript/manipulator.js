@@ -180,3 +180,5 @@ document.getElementById("closeAboutme").addEventListener("click", () => {
   document.getElementById("about-me").classList.add("hidden");
   document.getElementById("belowSections").classList.remove("hidden");
 });
+
+

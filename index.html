@@ -12,6 +12,14 @@
     <!-- <link rel="preload" href="./javascript/manipulator.js" as="script"> -->
     <meta name="description"
         content="Hello, i'm Aryan Dhiman. I am 21 years old. I am a mern-stack web developer and mobile application developer from Ambala Cantt. I am currently pursuing my bachelors in Computer Science from University Institute of Enginnering and Technology, kurukshetra university, kurukshetra (UIET-kurukshetra). I can create dynamic,engaging and scalable websites and mobile applications providing security through hashing mechanisms. I can turn your imaginative ideas into digital solution.">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<link rel="stylesheet" href="index.css">
+
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('LYrfpiLvcBT66MVez');
+        })();
+    </script>
 </head>
 
 <body>
@@ -631,18 +639,21 @@
 
                 <!-- Form on the right -->
                 <div class="w-full md:w-1/2 p-8 rounded-lg">
-                    <form id="contactForm" class="flex flex-col gap-4">
-                        <input type="text" name="name" placeholder="Your Name"
+                    <form id="submit-form" class="flex flex-col gap-4">
+                        <input type="text" name="name"  id="name" placeholder="Your Name"
                             class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
                             required />
-                        <input type="email" name="email" placeholder="Your Email"
+                        <input type="email" name="email" id="email"  placeholder="Your Email"
                             class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
                             required />
-                        <textarea name="message" rows="5" placeholder="Your Message"
+                        <input type="text" name="subject" id="subject"  placeholder="Your subject"
+                            class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
+                            required />
+                        <textarea name="message" rows="5" id="message" placeholder="Your Message"
                             class="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-transparent"
                             required></textarea>
 
-                        <button type="submit" id="submitBtn" name="submit"
+                        <button type="submit" id="submit" name="submit"
                             class="bg-blue-600 text-white py-3 px-6 rounded-md flex items-center justify-center hover:bg-blue-700 transition duration-200">
                             <span id="btnText">Send Message</span>
                             <svg id="spinner" class="animate-spin ml-2 hidden h-5 w-5 text-white"
@@ -680,7 +691,7 @@
                 <div class="text-gray-500 text-2xl custom-font">Aryan Dhiman</div>
                 <div class="text-gray-500 text-lg custom-font">Ambala Cantt, Haryana - 133001</div>
             </div>
-            <!-- <div class="footer-items">
+            <div class="footer-items">
             <ul class="flex flex-row gap-x-4 items-center ">
                 <li>
                     <a href="https://github.com/Aryandhiman77" target="_blank" title="Github">
@@ -736,7 +747,7 @@
                     </a>
                 </li>
             </ul>
-        </div> -->
+        </div>
         </footer>
     </div>
     <!-- footer section -->
@@ -755,5 +766,6 @@
     });
 </script>
 <script src="./src/javascript/manipulator.js"></script>
+<script src="./src/javascript/sendMail.js"></script>
 
 </html>
