@@ -16,12 +16,12 @@
             "url": "../assets/images/TicTacToe.png",
             "device": "mobile"
         },
-        "headingColor":"#e84300"
+        "headingColor": "#e84300"
     },
     {
         "title": "Shop-it",
         "subtitle": "(e-commerce web and mobile platform)",
-        "description": "Developed an E-commerce web & mobile Application using MERN stack. integrated Real Time Challanges, QR Room's with proper Authentication, password reset system, implemented hashing mechanisms to provide security.",
+        "description": "Developed a dynamic e-commerce web & mobile Application using MERN stack that provides the functionality to the users to manage their wishlist, carts (Used Redux Toolkit) and make purchases of product/variants. Implemented good amount of security checks to prevent any misbehaviours. Used Razorpay as a payment gateway to securely transfer the payments. Developed separate admin panel to manage CRUD of categories, orders, products, product-variants.",
         "tags": [
             "react.js",
             "express",
@@ -35,12 +35,12 @@
             "url": "../assets/images/shopit.avif",
             "device": "laptop"
         },
-        "headingColor":"#773ede"
+        "headingColor": "#773ede"
     },
     {
         "title": "NEWS APP",
         "subtitle": "(SSR-based NEWS Application)",
-        "description": "built-in FriendList Management System like PUBG, integrated Real Time Challanges, QR Room's functionality. Integrated proper Authentication, password reset, hashing mechanisms to provide security.",
+        "description": "Developed simple news application using EJS + Node js + MongoDB, that can be used locally inside an institute/college to create local news updates. Each user holds the right to create a News Post and can edit or delete it anytime. Implemented express-sessions to provide user's login security.",
         "tags": [
             "ejs",
             "express",
@@ -49,9 +49,9 @@
             "javascript"
         ],
         "image": {
-           "url": "../assets/images/newsApp.png",
-           "device": "laptop"
+            "url": "../assets/images/newsApp.png",
+            "device": "laptop"
         },
-        "headingColor":"#0066a6"
+        "headingColor": "#0066a6"
     }
 ]

@@ -21,107 +21,94 @@ const manipulateProjects = (projects) => {
               ? "py-0"
               : "py-10"
           }">
-                <div class="ProjectImage w-[48%] relative flex justify-start ">
-                    <div class="relative hover:scale-110 ease-in-out duration-200 ">
-                        <img class="${projectItem.image.device.toLowerCase()} aspect-3/2 object-cover drop-shadow-[0_0px_35px_#5958dee6]" height="auto" src="${
-            projectItem.image.url
-          }" alt="Loading..." />
-                    </div>
-                </div>
+    <div class="ProjectImage w-[48%] relative flex justify-start ">
+        <div class="relative hover:scale-110 ease-in-out duration-200 ">
+            <img class="${projectItem.image.device.toLowerCase()} aspect-3/2 object-cover drop-shadow-[0_0px_35px_#5958dee6]"
+                height="auto" src="${projectItem.image.url}" alt="Loading..." />
+        </div>
+    </div>
+    <div class="circle absolute left-1/2 -translate-x-2 top-50" style="background:${
+      projectItem.headingColor
+    }">
+        <div class="white-circle"></div>
+    </div>
+    <div class="absolute extnsn h-[1px] w-[35%] -z-20 flex items-center justify-start right-1/2" style="background:${
+      projectItem.headingColor
+    }"></div>
 
-                <div class="circle absolute left-1/2 -translate-x-2 top-50" style="background:${
-                  projectItem.headingColor
-                }">
-                    <div class="white-circle"></div>
-                </div>
-                <div
-                    class="absolute extnsn h-[1px] w-[35%] -z-20 flex items-center justify-start right-1/2" style="background:${
-                      projectItem.headingColor
-                    }">
-
-                </div>
-
-                <div class="cntnt w-[48%] min-h-64 px-[2%]">
-                    <div class="heading text-4xl my-2 font-semibold handlee custom-font tracking-[2px]" style="color:${
-                      projectItem.headingColor
-                    }">
-                        ${projectItem.title}
-                    </div>
-                    <div class="mini-description text-xl text-[${
-                      projectItem.headingColor
-                    }] mb-3 custom-font tracking-[1px] font-bold" style="color:${
+    <div class="cntnt w-[48%] min-h-64 px-[2%]">
+        <div class="heading text-4xl my-2 font-semibold handlee custom-font tracking-[2px]" style="color:${
+          projectItem.headingColor
+        }">${
+            projectItem.title
+          }</div><div class="mini-description text-xl text-[${
+            projectItem.headingColor
+          }] mb-3 custom-font tracking-[1px] font-bold" style="color:${
             projectItem.headingColor
           }">
-                          ${projectItem.subtitle}
-                    </div>
-                    <div class="description text-[15px] h-auto mb-4 font-light">
-                          ${projectItem.description}
-                    </div>
-                    <ul class="techStack text-[15px] flex flex-row flex-wrap gap-y-2 gap-x-2 h-auto">
-                          ${projectItem.tags
-                            ?.map(
-                              (tag) => `
-                              <li class="tag">
-                            #${tag}
-                        </li>`
-                            )
-                            .join("")}
-                       
-                    </ul>
-                </div>
-            </div>`
+            ${projectItem.subtitle}
+        </div>
+        <div class="description text-[15px] h-auto mb-4 font-light">
+            ${projectItem.description}
+        </div>
+        <ul class="techStack text-[15px] flex flex-row flex-wrap gap-y-2 gap-x-2 h-auto">
+            ${projectItem.tags
+              ?.map(
+                (tag) => `
+            <li class="tag">
+                #${tag}
+            </li>`
+              )
+              .join("")}
+
+        </ul>
+    </div>
+</div>`
         : `<div class="ProjectContainer relative flex mx-auto justify-between items-center py-10">
-                <div class="cntnt w-[48%] min-h-64 px-[2%]">
-                    <div class="heading text-4xl my-2 font-semibold handlee custom-font tracking-[2px]" style="color:${
-                      projectItem.headingColor
-                    }">
-                        ${projectItem.title}
-                    </div>
-                    <div class="mini-description text-xl text-[${
-                      projectItem.headingColor
-                    }] mb-3 custom-font tracking-[1px] font-bold" style="color:${
+    <div class="cntnt w-[48%] min-h-64 px-[2%]">
+        <div class="heading text-4xl my-2 font-semibold handlee custom-font tracking-[2px]" style="color:${
+          projectItem.headingColor
+        }">
+            ${projectItem.title}
+        </div>
+        <div class="mini-description text-xl text-[${
+          projectItem.headingColor
+        }] mb-3 custom-font tracking-[1px] font-bold" style="color:${
             projectItem.headingColor
           }">
-                          ${projectItem.subtitle}
-                    </div>
-                    <div class="description text-[15px] h-auto mb-4 font-light">
-                       ${projectItem.description}
-                    </div>
-                    <ul class="techStack text-[15px] flex flex-row flex-wrap gap-y-2 gap-x-2 h-auto">
-                         ${projectItem.tags
-                           ?.map(
-                             (tag) => `
-                              <li class="tag">
-                            #${tag}
-                        </li>`
-                           )
-                           .join("")}
-                    </ul>
-                </div>
+            ${projectItem.subtitle}
+        </div>
+        <div class="description text-[15px] h-auto mb-4 font-light">
+            ${projectItem.description}
+        </div>
+        <ul class="techStack text-[15px] flex flex-row flex-wrap gap-y-2 gap-x-2 h-auto">
+            ${projectItem.tags
+              ?.map(
+                (tag) => `
+            <li class="tag">
+                #${tag}
+            </li>`
+              )
+              .join("")}
+        </ul>
+    </div>
+    <div class="circle absolute left-1/2 -translate-x-2 top-50" style="background:${
+      projectItem.headingColor
+    }">
+        <div class="white-circle"></div>
+    </div>
+    <div class="absolute extnsn h-[1px] w-[35%] -z-10 flex items-center justify-start left-1/2" style="background:${
+      projectItem.headingColor
+    }">
+    </div>
+
+    <div class="ProjectImage w-[48%] flex justify-end">
+        <img class="hover:scale-110 ease-in-out duration-200 ${projectItem.image.device.toLowerCase()} aspect-3/2 object-cover drop-shadow-[0_0px_35px_#5958dee6]"
+            height="auto" src="${projectItem.image.url}" alt="Loading..." />
+    </div>
 
 
-                <!-- <div class="w-[30%] flex border-2 border-black"> -->
-                <div class="circle absolute left-1/2 -translate-x-2 top-50" style="background:${
-                  projectItem.headingColor
-                }">
-                    <div class="white-circle"></div>
-                </div>
-                <div
-                    class="absolute extnsn h-[1px] w-[35%] -z-10 flex items-center justify-start left-1/2" style="background:${
-                      projectItem.headingColor
-                    }">
-                </div>
-                <!-- </div> -->
-
-                <div class="ProjectImage w-[48%] flex justify-end">
-                    <img class="hover:scale-110 ease-in-out duration-200 ${projectItem.image.device.toLowerCase()} aspect-3/2 object-cover drop-shadow-[0_0px_35px_#5958dee6]" height="auto" src="${
-            projectItem.image.url
-          }"
-                        alt="Loading..." />
-                </div>
-
-
-            </div>`;
+</div>`;
     })
     .join("");
   myProjects.innerHTML = projectsHTML;
